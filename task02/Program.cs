@@ -11,9 +11,9 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 int max = number1;
 if (number1 > number2)
 {
-    Console.WriteLine($"{number1}");
+    Console.WriteLine($"Большее число {number1}, Меньшее число {number2}");
 }
 else 
 {
-    Console.WriteLine($"{number2}");
+   Console.WriteLine($"Большее число {number2}, Меньшее число {number1}");
 }
