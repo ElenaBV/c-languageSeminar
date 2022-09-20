@@ -1,0 +1,15 @@
+/Users/elenabespalova/Desktop/SeminarProg/Task00/bin/Debug/net6.0/Task00
+/Users/elenabespalova/Desktop/SeminarProg/Task00/bin/Debug/net6.0/Task00.deps.json
+/Users/elenabespalova/Desktop/SeminarProg/Task00/bin/Debug/net6.0/Task00.runtimeconfig.json
+/Users/elenabespalova/Desktop/SeminarProg/Task00/bin/Debug/net6.0/Task00.dll
+/Users/elenabespalova/Desktop/SeminarProg/Task00/bin/Debug/net6.0/Task00.pdb
+/Users/elenabespalova/Desktop/SeminarProg/Task00/obj/Debug/net6.0/Task00.csproj.AssemblyReference.cache
+/Users/elenabespalova/Desktop/SeminarProg/Task00/obj/Debug/net6.0/Task00.GeneratedMSBuildEditorConfig.editorconfig
+/Users/elenabespalova/Desktop/SeminarProg/Task00/obj/Debug/net6.0/Task00.AssemblyInfoInputs.cache
+/Users/elenabespalova/Desktop/SeminarProg/Task00/obj/Debug/net6.0/Task00.AssemblyInfo.cs
+/Users/elenabespalova/Desktop/SeminarProg/Task00/obj/Debug/net6.0/Task00.csproj.CoreCompileInputs.cache
+/Users/elenabespalova/Desktop/SeminarProg/Task00/obj/Debug/net6.0/Task00.dll
+/Users/elenabespalova/Desktop/SeminarProg/Task00/obj/Debug/net6.0/refint/Task00.dll
+/Users/elenabespalova/Desktop/SeminarProg/Task00/obj/Debug/net6.0/Task00.pdb
+/Users/elenabespalova/Desktop/SeminarProg/Task00/obj/Debug/net6.0/Task00.genruntimeconfig.cache
+/Users/elenabespalova/Desktop/SeminarProg/Task00/obj/Debug/net6.0/ref/Task00.dll
