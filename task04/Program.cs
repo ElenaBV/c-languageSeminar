@@ -25,9 +25,7 @@ else
 if(num3 > max)
     {
         max = num3;
-        Console.WriteLine($"Максимальное число - {max}");
     }
-    else
-    {
-        Console.WriteLine($"Максимальное число - {max}");
-    }
+   
+Console.WriteLine($"Максимальное число - {max}");
+
