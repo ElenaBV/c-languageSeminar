@@ -8,7 +8,7 @@ int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Напишите 2 число");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
-int max = number1;
+
 if (number1 > number2)
 {
     Console.WriteLine($"Большее число {number1}, Меньшее число {number2}");
