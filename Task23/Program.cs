@@ -12,7 +12,7 @@ void cube(int number)
     while (counter <= number)
     {
         int result = counter * counter*counter;
-        Console.WriteLine($"{counter} = {result}");
+        Console.WriteLine($"{counter,2} {result,5}");
         counter++;
     }
 }
