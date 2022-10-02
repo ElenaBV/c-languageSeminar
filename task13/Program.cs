@@ -5,18 +5,19 @@
 
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-
+while (number > 999)
+{
+   number = number / 10;
+ 
+}
+  int result2 = ShowThirdDigit(number);
 int ShowThirdDigit(int number)
 {
     return number % 10;
 
 }
 int result = ShowThirdDigit(number);
+
 if (number / 100 > 0) Console.WriteLine($"Итоговое число от {number} = {result}");
 else Console.WriteLine("третьей цифры нет");
 
-// while (number > 999)
-// {
-//    number / 10;
-// }
-// else int result = ShowThirdDigit(number);
