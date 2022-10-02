@@ -7,10 +7,11 @@ Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 while (number > 999)
 {
+  
    number = number / 10;
  
 }
-  int result2 = ShowThirdDigit(number);
+  
 int ShowThirdDigit(int number)
 {
     return number % 10;
