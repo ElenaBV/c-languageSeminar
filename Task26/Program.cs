@@ -15,5 +15,5 @@ int QuintityOfNumber(int num)
     }
 return i;
 }
-int result = QuintityOfNumber(number);
+int result = QuintityOfNumber(Math.Abs(number));
 Console.WriteLine ($"{result}");
