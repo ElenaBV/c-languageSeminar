@@ -10,7 +10,7 @@ int numB = Convert.ToInt32(Console.ReadLine());
 
 if (numB > 0)
 {
-    int result = degreeNumbers(numA, numB);
+    int result = DegreeNumbers(numA, numB);
     Console.WriteLine($"{result}");
 }
 else Console.WriteLine("wrong");
