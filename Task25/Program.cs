@@ -15,7 +15,7 @@ if (numB > 0)
 }
 else Console.WriteLine("wrong");
 
-int degreeNumbers(int numA, int numB)
+int DegreeNumbers(int numA, int numB)
 
 {
     int degree = numA;
@@ -28,3 +28,5 @@ int degreeNumbers(int numA, int numB)
     }
     return degree;
 }
+
+
