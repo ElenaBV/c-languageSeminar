@@ -8,7 +8,7 @@ double[] CreateArrayRndInt(int size, int min, int max)
     var rnd = new Random();
     for (int i = 0; i < size; i++)
     {
-        array[i] = rnd.NextDouble() * (max - min) + min;
+        array[i] = Math.Round(rnd.NextDouble() * (max - min) + min,2, MidpointRounding.AwayFromZero);
     }
     return array;
 }
@@ -45,9 +45,8 @@ double[] MinMaxArray(double[] array)
 
 double[] array = CreateArrayRndInt(4, 0, 3);
 PrintArray(array);
-
 double[] minMaxArray = MinMaxArray(array);
-foreach (double value in array) Console.WriteLine(Math.Round(value, 2, MidpointRounding.AwayFromZero));
-foreach (double value in array) Console.WriteLine($"Максимальное= {minMaxArray[0]}, Минимальное = {minMaxArray[1]}",
-Math.Round(value, 2, MidpointRounding.AwayFromZero));
+Console.WriteLine($"Максимальное= {minMaxArray[0]}, Минимальное = {minMaxArray[1]}");
+Console.WriteLine($"Разница {minMaxArray[0] - minMaxArray[1]}");
+
 
