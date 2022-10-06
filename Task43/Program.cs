@@ -44,13 +44,15 @@ double[] FillNewArray(double[] array)
 
     return array;
 }
+ 
 
     
 double[] array = CreateArrayRndInt(4);
 FillNewArray(array);
+double x = (array[2] - array[0]) / (array[1] - array[3]);
+double y = array[1] * x + array[0];
+Console.WriteLine($"точку пересечения двух прямых  {x},{y}");
 PrintArray(array);
 
-double x = array[2] - array[0] / array[1] - array[4];
-double y = (array[2] * x) + array[0];
 
 
