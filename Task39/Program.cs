@@ -22,23 +22,28 @@ void PrintArray(int[] array)
 }
 
 
-int [] ReverseMassiv (int[]array)
+void ReverseArray(int[] array)
 {
-    int i = 0;
-    int j = array.Length - 1;
-    int obj = 0;
-    if(array[1]< array[2]) 
+    int size = array.Length;
+    int index1 = 0;
+    int index2 = size - 1;
+    
+    while (index1 < index2)
     {
-        obj = array[i];
-        array[i] = array[j];
-        array[j] = obj;
-        i++;
-        j--;
+        int obj = array[index1];
+        array[index1] = array[index2];
+        array[index2] = obj;
+        index1++;
+        index2--;
 
     }
-    return array;
+
+
 }
-int [] array = CreateArrayRndInt(4,1,10);
+int[] array = CreateArrayRndInt(5, 1, 10);
 PrintArray(array);
-int [] reverseMassiv = ReverseMassiv(array);
+ReverseArray(array);
 PrintArray(array);
+Array.Reverse(array);
+PrintArray(array);
+
