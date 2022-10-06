@@ -21,28 +21,55 @@ void PrintArray(int[] array)
     Console.WriteLine("]");
 }
 
+// void ReverseArray(int[] array)
+// {
+//     int size = array.Length;
+//     int index1 = 0;
+//     int index2 = size - 1;
 
-void ReverseArray(int[] array)
+//     while (index1 < index2)
+//     {
+//         int obj = array[index1];
+//         array[index1] = array[index2];
+//         array[index2] = obj;
+//         index1++;
+//         index2--;
+
+//     }
+// }
+
+// void ReverseArray(int[] array)
+// {
+//     int size = array.Length;
+
+//     for (int i = 0; i < size / 2; i++)
+//     {
+//         int temp = array[i];
+//         array[i] = array[array.Length - 1 - i];
+//         array[array.Length - 1 - i] = temp;
+//     }
+// }
+
+void ReverseArray2(int[] array)
 {
     int size = array.Length;
-    int index1 = 0;
-    int index2 = size - 1;
-    
-    while (index1 < index2)
+    for (int i = 0; i < size/2; i++)
     {
-        int obj = array[index1];
-        array[index1] = array[index2];
-        array[index2] = obj;
-        index1++;
-        index2--;
+        Swap(array, i, array.Length - 1 - i);
 
     }
-
-
 }
+void Swap(int[] array, int index1, int index2)
+{
+    int temp = array[index1];
+    array[index1] = array[index2];
+    array[index2] = temp;
+}
+
+
 int[] array = CreateArrayRndInt(5, 1, 10);
 PrintArray(array);
-ReverseArray(array);
+ReverseArray2(array);
 PrintArray(array);
 Array.Reverse(array);
 PrintArray(array);
