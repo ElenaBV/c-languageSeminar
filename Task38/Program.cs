@@ -47,6 +47,6 @@ double[] array = CreateArrayRndInt(4, 0, 3);
 PrintArray(array);
 double[] minMaxArray = MinMaxArray(array);
 Console.WriteLine($"Максимальное= {minMaxArray[0]}, Минимальное = {minMaxArray[1]}");
-Console.WriteLine($"Разница {minMaxArray[0] - minMaxArray[1]}");
+Console.WriteLine($"Разница  {minMaxArray[0] - minMaxArray[1]}");
 
 
