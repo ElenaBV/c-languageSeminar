@@ -9,7 +9,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int ConvertNumberToBinarySystem(int number)
 {
-    int binaryNum = 0;
+    int binaryNum = default;
     int counter = 1;
     while (number > 0)
     {
