@@ -12,9 +12,9 @@ int sideC = Convert.ToInt32(Console.ReadLine());
 
 
 
-bool CanTriangleExicte(int side1, int side2, int side3)
+bool CanTriangleExiste(int side1, int side2, int side3)
 {
     return side1+side2>side3&&side2+side3>side1&&side1+side3>side2;
 }
-if (CanTriangleExicte (sideA, sideB, sideC)) Console.WriteLine($"Ok");
+if (CanTriangleExiste (sideA, sideB, sideC)) Console.WriteLine($"Ok");
 else Console.WriteLine("No");
