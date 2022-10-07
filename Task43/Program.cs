@@ -34,11 +34,11 @@ void PrintArray(double[] array)
 }
 double[] FillNewArray(double[] array)
 {
-
+    Console.Write("Введите числа ");
+    int numA = Convert.ToInt32(Console.ReadLine());
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write("Введите числа  ");
-        int numA = Convert.ToInt32(Console.ReadLine());
+        
         array[i] = numA;
     }
 

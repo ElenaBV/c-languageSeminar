@@ -44,10 +44,12 @@ void CountNumberOverZero(int [] array)
     {
         if(array[i] > 0) count++;
     }
-    Console.WriteLine($"Количество больше нуля - {count}");
+Console.WriteLine($"Количество больше нуля - {count}");
 }
 
 int[] array = CreateArrayRndInt(numA);
 FillNewArray(array);
 PrintArray(array);
 CountNumberOverZero(array);
+
+
