@@ -16,12 +16,11 @@
 // double y = NumK1*x+NumB1;
 // Console.WriteLine($"точку пересечения двух прямых  {x},{y}");
 
-double[] CreateArrayRndInt(int size)
+double[] CreateArray(int size)
 {
     double[] array = new double[size];
     return array;
 }
-
 void PrintArray(double[] array)
 {
     Console.Write("[");
@@ -34,25 +33,21 @@ void PrintArray(double[] array)
 }
 double[] FillNewArray(double[] array)
 {
-    Console.Write("Введите числа ");
-    int numA = Convert.ToInt32(Console.ReadLine());
     for (int i = 0; i < array.Length; i++)
     {
-        
+        Console.Write("Введите числа  ");
+        int numA = Convert.ToInt32(Console.ReadLine());
         array[i] = numA;
     }
 
-    return array;
-}
- 
-
-    
-double[] array = CreateArrayRndInt(4);
-FillNewArray(array);
-double x = (array[2] - array[0]) / (array[1] - array[3]);
-double y = array[1] * x + array[0];
-Console.WriteLine($"точку пересечения двух прямых  {x},{y}");
-PrintArray(array);
+     return array;
+ }
 
 
 
+ double[] array = CreateArray(4);
+ FillNewArray(array);
+ double x = (array[2] - array[0]) / (array[1] - array[3]);
+ double y = array[1] * x + array[0];
+ Console.WriteLine($"точку пересечения двух прямых  {x},{y}");
+ PrintArray(array);
