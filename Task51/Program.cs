@@ -6,20 +6,21 @@
 // 5 9 2 3
 // 8 4 2 4
 
-int[,] CreateMatrixSumIJ(int rows, int columns)
+
+int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 {
-    int[,] matrix = new int[rows, columns];
-    var rnd = new Random();
+int[,] matrix = new int[rows, columns];
+var rnd = new Random();
 
-    for (int i = 0; i < matrix.GetLength(0); i++) //rows (0)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++) //columns (1)
-        {
-            matrix[i, j] = i + j;
-        }
-    }
+for (int i = 0; i < matrix.GetLength(0); i++) //rows (0)
+{
+for (int j = 0; j < matrix.GetLength(1); j++) //columns (1)
+{
+matrix[i, j] = rnd.Next(min, max + 1);
+}
+}
 
-    return matrix;
+return matrix;
 }
 void PrintMatrix(int[,] matrix)
 {
@@ -49,9 +50,7 @@ int SumElementsOfMainDiagonal(int[,] matrix)
 }
 
 
-int[,] array2d = CreateMatrixSumIJ(3, 4);
+int[,] array2d = CreateMatrixRndInt(3, 4,0,9);
 PrintMatrix(array2d);
-Console.WriteLine();
 int sumElementsOfMainDiagonal =SumElementsOfMainDiagonal (array2d);
-Console.WriteLine("Сумма элементов, находящихся на главной диагонали   " + sumElementsOfMainDiagonal);
-
+Console.WriteLine("Значение этого элемента   " + sumElementsOfMainDiagonal);
