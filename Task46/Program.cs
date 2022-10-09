@@ -33,5 +33,7 @@ else Console.Write($"{matrix[i, j], 4}");
 Console.WriteLine("|");
 }
 }
+
+
 int[,] array2d = CreateMatrixRndInt(3, 4, 1, 9);
 PrintMatrix(array2d);
