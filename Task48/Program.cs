@@ -4,7 +4,7 @@
 // m = 3, n = 4.
 
 
-int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
+int[,] CreateMatrixSumIJ(int rows, int columns)
 {
 int[,] matrix = new int[rows, columns];
 var rnd = new Random();
@@ -34,5 +34,5 @@ Console.WriteLine("|");
 }
 
 
-int[,] array2d = CreateMatrixRndInt(3, 4, 1, 9);
+int[,] array2d = CreateMatrixSumIJ(3, 4);
 PrintMatrix(array2d);
