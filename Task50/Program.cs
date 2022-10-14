@@ -43,30 +43,26 @@ void PrintMatrix(int[,] matrix)
         Console.WriteLine("|");
     }
 }
-int SearchElement(int[,] matrix)
+void SearchElement(int[,] matrix)
 {
-    int element = default;
+    
     if (rows1 <= matrix.GetLength(0) && columns1 <= matrix.GetLength(0))
     {
-        for (int i = rows1; i < matrix.GetLength(0); i++)
-        {
-            for (int j = columns1; j < matrix.GetLength(1); j++)
-            {
-                if (i == rows1 && j == columns1) element = matrix[i, j];
-            }
-        }
+        int i = rows1;
+        int j = columns1;
+
+        if (i == rows1 && j == columns1) Console.WriteLine("Значение этого элемента   " + matrix[i, j]);
+        else Console.WriteLine("Нет такого элемента ");
+        
+
     }
-    else return -1;
-    return element;
 }
+
 
 int[,] array2d = CreateMatrixRndInt(3, 4, 0, 9);
 PrintMatrix(array2d);
-int searchElement = SearchElement(array2d);
-if (searchElement > 0)Console.WriteLine("Значение этого элемента   " + searchElement);
-else Console.WriteLine("Нет такого элемента ");
-
-
+SearchElement(array2d);
+// if (searchElement > 0) Console.WriteLine("Значение этого элемента   " + searchElement);
 
 
 

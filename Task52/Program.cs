@@ -36,33 +36,24 @@ void PrintMatrix(double[,] matrix)
 }
 
 
-
-
-double SumAverageColumElement(double[,] matrix)
+void SumAverageColumElement(double[,] matrix)
 {
     double counter = default;
-    double result = default;
-
-
+    for (int i = 0; i < matrix.GetLength(1); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(0); j++)
         {
-            for (int j = 0; j < 1; j++)
-            {
-                for (int i = 0; i < matrix.GetLength(0); i++)
-                {
-                    counter = counter + matrix[i, j];
-                }
-                result = counter / matrix.GetLength(0);
-            }
-
+            counter = counter + matrix[j, i];
         }
-        return result;
-
+        Console.WriteLine($"Значение этого элемента   ={counter / matrix.GetLength(1)}");
+    }
 }
 
 
-double[,] array2d = CreateMatrixRndInt(3, 4, 0, 9);
-PrintMatrix(array2d);
 
-double sumAverageColumElement=SumAverageColumElement(array2d);
- Console.WriteLine("Значение этого элемента   " + sumAverageColumElement);
+double[,] array2d = CreateMatrixRndInt(3, 4, 0, 2);
+PrintMatrix(array2d);
+SumAverageColumElement(array2d);
+
+// Console.WriteLine("Значение этого элемента   " + sumAverageColumElement);
 
