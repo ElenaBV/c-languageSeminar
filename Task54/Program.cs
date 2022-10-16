@@ -37,7 +37,7 @@ void PrintMatrix(int[,] matrix)
 }
 
 
-void ChangeRows(int[,] matrix)
+void SortElementsInRowsMaxToMin(int[,] matrix)
 {
 
     for (int i = 0; i < matrix.GetLength(0); i++)
@@ -54,8 +54,6 @@ void ChangeRows(int[,] matrix)
                 }
             }
             }
-
-            
         }
     }
 
@@ -66,7 +64,7 @@ void ChangeRows(int[,] matrix)
 int[,] matrix2d = CreateMatrixRndInt(3, 4, 1, 9);
 PrintMatrix(matrix2d);
 Console.WriteLine();
-ChangeRows(matrix2d);
+SortElementsInRowsMaxToMin(matrix2d);
 PrintMatrix(matrix2d);
 
 
