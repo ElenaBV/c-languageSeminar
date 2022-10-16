@@ -38,15 +38,23 @@ void PrintMatrix(double[,] matrix)
 
 void SumAverageColumElement(double[,] matrix)
 {
-    double counter = default;
-    for (int i = 0; i < matrix.GetLength(1); i++)
+
+    double[] array = new double[4];
+    for (int k = 0; k < array.Length; k++)
     {
-        for (int j = 0; j < matrix.GetLength(0); j++)
+        for (int i = 0; i < matrix.GetLength(1); i++)
         {
-            counter = counter + matrix[j, i];
+            double counter = default;
+            for (int j = 0; j < matrix.GetLength(0); j++)
+            {
+                counter = counter + matrix[j, i];
+            }
+array[k] = counter / matrix.GetLength(1);
         }
-        Console.WriteLine($"Значение этого элемента   ={counter / matrix.GetLength(1)}");
+        
+        Console.Write($"{array[k]}  ");
     }
+
 }
 
 
