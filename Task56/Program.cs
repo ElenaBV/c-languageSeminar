@@ -40,7 +40,9 @@ void PrintMatrix(int[,] matrix)
 int[] FindMinSumOfElementsInRow(int[,] matrix)
 {
 
-    int[] array = new int[3];
+    int size = matrix.GetLength(0);
+    int[] array = new int[ size];
+    
     int k = 0;
     while (k < array.Length)
     {
@@ -83,7 +85,7 @@ void ShowRowWithLessSum(int[] array)
         }
         k++;
     }
-Console.WriteLine($"Номер строки с наименьшей суммой элементов: {k}");
+Console.WriteLine("Номер строки с наименьшей суммой элементов:" + min);
 }
 
 int[,] matrix2d = CreateMatrixRndInt(3, 4, 1, 9);
