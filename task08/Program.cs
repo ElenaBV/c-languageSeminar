@@ -11,6 +11,8 @@ while (count <= numN)
     if (count % 2 == 0)
     {
         Console.Write($"{count}, ");
+
     }
     count = count + 1;
+    
 }
