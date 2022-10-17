@@ -9,13 +9,16 @@ int numberB = Convert.ToInt32(Console.ReadLine());
 int sumn = SumOfDigits(numberA, numberB);
 Console.WriteLine($"{sumn}");
 
+
+
 int SumOfDigits(int numA, int numB)
 {
     int sum = numA;
+
     if (numA < numB)
     {
         sum += SumOfDigits(numA + 1, numB);
-        
+
     }
     return sum;
 }
