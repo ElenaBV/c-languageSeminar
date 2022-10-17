@@ -80,12 +80,7 @@ void PrintArray(int[] array)
     Console.WriteLine("]");
 }
 
-// int [] OneRowWithIndex(int[]array)
-// {
-//     int OneRowArrayWithIndex = new int[array.Length *3 ];
-    
 
-// }
 int[,,] matrix2d = CreateMatrixRndInt(2, 2, 2, 10, 99);
 PrintMatrix(matrix2d);
 Console.WriteLine();
