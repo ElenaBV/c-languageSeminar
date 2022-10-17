@@ -21,3 +21,14 @@ int ConvertNumberToBinarySystem(int number)
 }
 int binaryNum = ConvertNumberToBinarySystem(number);
 Console.WriteLine($"{number} - {binaryNum} ");
+
+
+int num = 13;
+Dectobim(num);
+
+void Dectobim(int number)
+{
+    if (number == 0) return;
+    Dectobim(number/2);
+    Console.Write(number%2);
+}
