@@ -39,8 +39,8 @@ void PrintMatrix(int[,,] matrix)
             for (int k = 0; k < matrix.GetLength(2); k++)
 
             {
-                if (j < matrix.GetLength(1) - 1) Console.Write($"{matrix[i, j, k],4}, ");
-                else Console.Write($"{matrix[i, j, k],4}");
+                if (j < matrix.GetLength(1) - 1) Console.Write($"{matrix[i, j, k],4}({i},{j},{k}) ");
+                else Console.Write($"{matrix[i, j, k],4}({i},{j},{k}) ");
             }
         }
         Console.WriteLine("|");
@@ -50,7 +50,7 @@ void PrintMatrix(int[,,] matrix)
 
 int[] MatriToOneRow(int[,,] matrix)
 {
-    int[] oneRowArray = new int[matrix.Length];
+    int[] oneRowArray = new int[matrix.Length ];
     int counter = 0;
     
     for (int i = 0; i < matrix.GetLength(0); i++) //rows (0)
