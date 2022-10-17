@@ -75,17 +75,19 @@ void PrintArray(int[] array)
 void ShowRowWithLessSum(int[] array)
 {
     int k = 0;
+    int counter = 0 ;
     int min = array[k];
     while (k < array.Length)
     {
         if (array[k] < min)
         {
             min = array[k];
+            counter = counter +1;
             
         }
         k++;
     }
-Console.WriteLine("Номер строки с наименьшей суммой элементов:" + min);
+Console.WriteLine("Номер строки с наименьшей суммой элементов:" + counter);
 }
 
 int[,] matrix2d = CreateMatrixRndInt(3, 4, 1, 9);
