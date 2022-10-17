@@ -4,17 +4,20 @@
 // A = 2; B = 3 -> 8
 
 Console.WriteLine("Введите значение ");
-int numberM = Convert.ToInt32(Console.ReadLine());
+int numberA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите значение ");
-int numberN = Convert.ToInt32(Console.ReadLine());
-int result = GetPowOfNumber(numberM,numberN);
-Console.WriteLine($"{result}");
+int numberB = Convert.ToInt32(Console.ReadLine());
+int result = GetPowOfNumber(numberA,numberB);
+Console.WriteLine(result);
 
-int GetPowOfNumber (int numM, int numN)
+int GetPowOfNumber (int numA, int numB)
 {
-    if (numN == 0 ) return 1 ;
-    int res = numberM; 
-    res *= GetPowOfNumber(numM,numN-1);
-    return res;
+    // if (numN == 0 ) return 1 ;
+    // int res = numberM; 
+    // res *= GetPowOfNumber(numM,numN-1);
+    // return res;
+    return numB == 0? 1 : numA *GetPowOfNumber (numA,numB-1);
 
 }
+
+
